@@ -7,7 +7,8 @@ fetch('https://randomuser.me/api/?results=12&inc=picture,name,email,location,cel
   .then(response => response.json())
   .then(data=> {generateGallary(data.results)})
   .catch(error => console.log('Looks like there was a problem!', error))
-// ------------------------------------------
+
+  // ------------------------------------------
 //  HELPER FUNCTIONS
 // ------------------------------------------
 //Makes card html for each employee
